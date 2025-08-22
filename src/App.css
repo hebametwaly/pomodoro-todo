@@ -1,0 +1,103 @@
+.topbar {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  background: var(--surface);
+  color: var(--muted);
+  border-bottom: 1px solid #1e293b;
+}
+
+.container {
+  max-width: 980px;
+  margin: 24px auto;
+  padding: 0 16px 48px;
+  background: var(--panel);
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid #0f1b2d;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
+.timer-card { margin: 32px auto; max-width: 560px; text-align: center; }
+.tasks-card { margin: 24px auto; max-width: 900px; }
+
+h1 { margin: 0 0 16px; font-size: 34px; }
+h2 { margin: 4px 0 16px; font-size: 28px; }
+
+.time-boxes {
+  display: flex; gap: 18px; justify-content: center; margin: 8px 0 4px;
+}
+
+.time-box {
+  background: var(--box);
+  border-radius: 12px;
+  width: 150px;
+  padding: 14px 18px;
+}
+
+.time {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.label {
+  text-align: center;
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.controls { display: flex; gap: 12px; justify-content: center; margin-top: 18px; }
+
+.btn {
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #2a3345;
+  color: var(--ink);
+  cursor: pointer;
+}
+.btn.primary { background: var(--primary); }
+.btn.danger  { background: var(--danger); }
+
+.task-input-row {
+  display: flex; gap: 10px; margin: 12px 0;
+}
+.task-input-row input {
+  flex: 1;
+  border: 0;
+  border-radius: 10px;
+  background: #213049;
+  color: var(--ink);
+  padding: 14px 14px;
+}
+.task-input-row input::placeholder { color: #8aa0bf; }
+
+.error { color: var(--danger); margin: 6px 2px; font-size: 14px; }
+
+.task-list { list-style: none; padding: 0; margin: 14px 0 0; display: grid; gap: 8px; }
+.task-item {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 14px; background: #0d1523; border-radius: 10px; border: 1px solid #0f1c2f;
+}
+
+.checkbox { display: flex; align-items: center; gap: 10px; }
+.checkbox input[type="checkbox"] {
+  width: 18px; height: 18px; accent-color: var(--primary);
+}
+.text.completed { text-decoration: line-through; color: #9aa7bd; }
+
+.icon-btn {
+  background: transparent; border: 0; cursor: pointer; font-size: 18px; line-height: 1;
+  color: #ff7861;
+}
+.icon-btn:hover { transform: scale(1.05); }

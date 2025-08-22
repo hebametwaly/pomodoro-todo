@@ -1,0 +1,21 @@
+:root{
+  --bg: #0f172a;      /* page background */
+  --panel: #111827;   /* outer panel */
+  --card: #0b1220;    /* inner cards */
+  --ink: #e5e7eb;     /* text color */
+  --muted: #94a3b8;
+  --primary: #3b82f6;
+  --danger: #e65339;
+  --surface: #1f2937;
+  --box: #243245;
+}
+
+*{ box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji";
+}
+button { font: inherit; }
